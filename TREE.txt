@@ -1,0 +1,39 @@
+portfolio-site/
+├─ app/
+│  ├─ about/page.js
+│  ├─ articles/page.js
+│  ├─ contact/ContactForm.jsx
+│  ├─ contact/page.js
+│  ├─ globals.css
+│  ├─ layout.js
+│  ├─ page.js
+│  ├─ resources/page.js
+│  ├─ services/page.js
+│  ├─ work/page.js
+│  ├─ api/
+│  │  └─ contact/route.js
+│  ├─ components/
+│  │  ├─ Badge.jsx
+│  │  ├─ Button.jsx
+│  │  ├─ Footer.jsx
+│  │  ├─ Header.jsx
+│  │  ├─ ProjectCard.jsx
+│  │  ├─ Section.jsx
+│  │  ├─ ServiceCard.jsx
+│  │  ├─ SkillPill.jsx
+│  │  └─ Testimonial.jsx
+│  ├─ data/
+│  │  ├─ projects.js
+│  │  ├─ services.js
+│  │  ├─ skills.js
+│  │  └─ testimonials.js
+│  └─ lib/site.js
+├─ public/
+│  ├─ favicon.ico
+│  └─ og.png
+├─ .gitignore
+├─ next.config.mjs
+├─ package.json
+├─ postcss.config.mjs
+├─ tailwind.config.mjs
+└─ README.md
