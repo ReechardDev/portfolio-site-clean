@@ -1,11 +1,8 @@
-@'
 import "./globals.css";
 import { Analytics } from "@vercel/analytics/react";
 
 function computeBase() {
-  // Prefer explicit site URL, else Vercel URL, else localhost
   let raw = process.env.NEXT_PUBLIC_SITE_URL || process.env.VERCEL_URL || "http://localhost:3000";
-  // Ensure protocol so new URL(...) never throws
   if (!/^https?:\/\//i.test(raw)) raw = `https://${raw}`;
   try { return new URL(raw); } catch { return new URL("http://localhost:3000"); }
 }
@@ -49,4 +46,3 @@ export default function RootLayout({ children }) {
     </html>
   );
 }
-'@ | Set-Content -Encoding UTF8 -NoNewline .\app\layout.js
